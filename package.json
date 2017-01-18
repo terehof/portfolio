@@ -1,5 +1,5 @@
 {
-  "name": "terehov-portfolip",
+  "name": "terehov-portfolio",
   "version": "1.0.0",
   "description": "",
   "author": "terehof",
@@ -12,6 +12,7 @@
     "gulp-cssmin": "*",
     "gulp-jsmin": "*",
     "gulp-less": "*",
+    "gulp-sass": "*",
     "gulp-less-sourcemap": "*",
     "gulp-sourcemaps": "*",
     "gulp-rigger": "*",

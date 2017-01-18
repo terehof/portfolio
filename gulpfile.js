@@ -9,6 +9,7 @@ var gulp = require('gulp'),
     util = require('gulp-util'),
     //less = require('gulp-less'),
     less = require('gulp-less-sourcemap'),
+    sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
     connect = require('gulp-connect'),
     webserver = require('gulp-webserver'),
@@ -23,22 +24,22 @@ var path = {
         js: 'build/js/',
         html: 'build/',
         css: 'build/css/',
-        img: 'build/images/',
+        img: 'build/img/',
         fonts: 'build/fonts/'
     },
     src: {
         js: 'src/js/**/**/*.js',
-        style: 'src/style/style.less',
+        style: 'src/sass/style.scss',
         html: 'src/*.html',
-        img: 'src/images/**/*.*',
+        img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*'
     },
 
     watch: { //Тут мы укажем, за изменением каких файлов мы хотим наблюдать
         html: 'src/*.html',
         js: 'src/js/**/*.js',
-        style: 'src/style/**/*.less',
-        img: 'src/images/**/*.*',
+        style: 'src/style/**/*.scss',
+        img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*'
     },
     clean: './build'
@@ -67,15 +68,9 @@ gulp.task('images', function() {
 });
 gulp.task('style', function () {
     return gulp.src(path.src.style)
-        .pipe(less({
-            sourceMap: {
-                sourceMapRootpath: path.src.style
-            }
-        })).on('error', util.log)
-        /*.pipe(autoprefixer({
-            browsers: ['> 1%'],
-            cascade: false
-        }))*/
+        .pipe(sourcemaps.init())
+        .pipe(sass().on('error', util.log))
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest(path.build.css))
         .pipe(reload({ stream:true }));
 });
