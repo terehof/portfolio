@@ -24,7 +24,29 @@
 
 			$window.on('load', function() {
 				$body.removeClass('is-loading');
+				$('.page-loader').fadeOut();
+
+				setTimeout(function () {
+					// $('#header').addClass('changeHeaderBg')
+				}, 5000);
 			});
+
+		//main slider
+		$('.main-slider').slick({
+			arrows: false,
+			autoplay: true,
+			autoplaySpeed: 14000,
+			fade: true,
+			speed: 2000
+		});
+
+		$('.about-slider').slick({
+			arrows: false,
+			autoplay: true,
+			autoplaySpeed: 14000,
+			fade: false,
+			speed: 1000
+		});
 
 		// CSS polyfills (IE<9).
 			if (skel.vars.IEVersion < 9)

@@ -3,107 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Title</title>
+    <title>Портфолио Сергея Терехова - Веб-разработка</title>
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<!-- Header -->
-<div id="header">
-
-    <div class="top">
-
-        <!-- Logo -->
-        <div id="logo">
-            <span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
-            <h1 id="title">Jane Doe</h1>
-            <p>Hyperspace Engineer</p>
-        </div>
-
-        <!-- Nav -->
-        <nav id="nav">
-            <!--
-
-                Prologue's nav expects links in one of two formats:
-
-                1. Hash link (scrolls to a different section within the page)
-
-                   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
-
-                2. Standard link (sends the user to another page/site)
-
-                   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
-
-            -->
-            <ul>
-                <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
-                <li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
-                <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
-                <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
-            </ul>
-        </nav>
-
+<div class="page-loader">
+    <div class="spinner">
+        <div class="cube1"></div>
+        <div class="cube2"></div>
     </div>
-
-    <div class="bottom">
-
-        <!-- Social Icons -->
-        <ul class="icons">
-            <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-            <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-            <li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-            <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-            <li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
-        </ul>
-
-    </div>
-
 </div>
 
-<!-- Main -->
+<div id="header">
+    <div class="top">
+        <div id="logo">
+            <!--<span class="image avatar48"><img src="img/me2.jpg" alt="" /></span>-->
+            <h1 id="title">Сергей Терехов</h1>
+            <p>Веб-разработчик</p>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Главная</span></a></li>
+                <li><a href="#services" id="services-link" class="skel-layers-ignoreHref"><span class="icon fa-suitcase">Услуги</span></a></li>
+                <li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Портфолио</span></a></li>
+                <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">Обо мне</span></a></li>
+                <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Контакты</span></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="bottom">
+        <ul class="icons">
+            <li><a href="https://vk.com/serega_terehov" target="_blank" class="icon fa-vk"><span class="label">Вконтакте</span></a></li>
+            <li><a href="https://www.facebook.com/sergey.terekhov.58" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+            <li><a href="https://www.linkedin.com/in/terehovsergej" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+            <li><a href="https://github.com/terehof" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
+            <li><a href="mailto:terehovsergej@gmail.com" target="_blank" class="icon fa-envelope"><span class="label">Email</span></a></li>
+        </ul>
+    </div>
+</div>
 <div id="main">
-
-    <!-- Intro -->
     <section id="top" class="one dark cover">
-        <div class="container">
-
+        <div class="main-slider">
+            <div class="main-slide-1"></div>
+            <div class="main-slide-2"></div>
+            <div class="main-slide-4"></div>
+            <div class="main-slide-3"></div>
+        </div>
+        <div class="container first-screen">
             <header>
-                <h2 class="alt">Hi! I'm <strong>Prologue</strong>, a <a href="http://html5up.net/license">free</a> responsive<br />
-                    site template designed by <a href="http://html5up.net">HTML5 UP</a>.</h2>
-                <p>Ligula scelerisque justo sem accumsan diam quis<br />
-                    vitae natoque dictum sollicitudin elementum.</p>
+                <h2 class="alt">
+                    Привет! Меня зовут <strong>Сергей</strong>, <br>я &ndash; профессиональный веб-разработчик.
+                </h2>
+                <p>
+                    Предоставляю услуги по верстке и созданию сайтов на Wordpress.
+                </p>
             </header>
-
             <footer>
-                <a href="#portfolio" class="button scrolly">Magna Aliquam</a>
+                <a href="#portfolio" class="button scrolly">Смотреть портфолио</a>
             </footer>
+        </div>
+    </section>
 
+    <section id="services" class="two">
+        <div class="container">
+            <header>
+                <h2>Услуги</h2>
+            </header>
+            <div class="services-wrap">
+                <ul>
+                    <li>
+                        <strong>HTML-верстка по макету/дизайну:</strong> точное соответствие макету, чистый, понятный код, если нужно &ndash; с комментариями(для дальнейшей удобной работы с ним другим программистом или верстальщиком).
+                    </li>
+                    <li>
+                        <strong>Реализация CSS/JS анимаций:</strong> многие недооценивают возможности CSS, а ведь с его помощью можно делать качественную анимацию, которая не тормозит.
+                    </li>
+                    <li>
+                        <strong>Разработка сайта на CMS Wordpress:</strong> регистрация домена, хостинга, создание wordpress темы (верстка), установка Вашего сайта на хостинг, наполнение контентом.
+                    </li>
+                    <li>
+                        <strong>Установка, доработка дополнительного функционала:</strong> фотогалерея, слайдер, карты, попапы, формы обратной связи и т.д.
+                    </li>
+                    <li>
+                        <strong>Написание отдельных javascript скриптов:</strong> создание калькуляторов, дополнительный функционал слайдеров/галерей, настройка/кастомизация карт(работа с Google/Yandex maps API), работа с cookies.
+                    </li>
+                    <li>
+                        <strong>Оптимизация сайта:</strong> скорость загрузки, оптимизация сайта для лучшей индексации поисковыми системами: HTML и CSS валидация, сжатие изображений и пр..
+                    </li>
+                    <li>
+                        <strong>Верстка Email рассылок:</strong> верстка html-писем которые одинаково отображаются во всех популярных почтовых сервисах.
+                    </li>
+                    <li>
+                        <strong>Поддержка Вашего сайта:</strong> дальнейшее сопровождение и администрирование Ваших веб-сайтов.
+                    </li>
+                    <li>
+                        <strong>Консультационные услуги.</strong>
+                    </li>
+                </ul>
+                <p>
+                    <strong>Цена</strong> зависит от многих факторов, поэтому единого прайса у меня нет.
+                    Покажите мне макет или ТЗ и я оценю объем работ и назову точную цену.
+                </p>
+            </div>
         </div>
     </section>
 
     <!-- Portfolio -->
-    <section id="portfolio" class="two">
+    <section id="portfolio" class="three">
         <div class="container">
 
             <header>
-                <h2>Portfolio</h2>
+                <h2>Портфолио</h2>
             </header>
 
-            <p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-                egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-                Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
-                fusce hendrerit lacus ridiculus.</p>
+            <p>Некоторые из моих работ:</p>
 
             <div class="row">
                 <div class="4u 12u$(mobile)">
                     <article class="item">
-                        <a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+                        <a href="#" class="image fit"><img src="img/pic02.jpg" alt="" /></a>
                         <header>
                             <h3>Ipsum Feugiat</h3>
                         </header>
                     </article>
                     <article class="item">
-                        <a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
+                        <a href="#" class="image fit"><img src="img/pic03.jpg" alt="" /></a>
                         <header>
                             <h3>Rhoncus Semper</h3>
                         </header>
@@ -111,13 +135,13 @@
                 </div>
                 <div class="4u 12u$(mobile)">
                     <article class="item">
-                        <a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
+                        <a href="#" class="image fit"><img src="img/pic04.jpg" alt="" /></a>
                         <header>
                             <h3>Magna Nullam</h3>
                         </header>
                     </article>
                     <article class="item">
-                        <a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
+                        <a href="#" class="image fit"><img src="img/pic05.jpg" alt="" /></a>
                         <header>
                             <h3>Natoque Vitae</h3>
                         </header>
@@ -125,13 +149,13 @@
                 </div>
                 <div class="4u$ 12u$(mobile)">
                     <article class="item">
-                        <a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+                        <a href="#" class="image fit"><img src="img/pic06.jpg" alt="" /></a>
                         <header>
                             <h3>Dolor Penatibus</h3>
                         </header>
                     </article>
                     <article class="item">
-                        <a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+                        <a href="#" class="image fit"><img src="img/pic07.jpg" alt="" /></a>
                         <header>
                             <h3>Orci Convallis</h3>
                         </header>
@@ -143,47 +167,66 @@
     </section>
 
     <!-- About Me -->
-    <section id="about" class="three">
+    <section id="about" class="four">
         <div class="container">
 
             <header>
-                <h2>About Me</h2>
+                <h2>Обо мне</h2>
             </header>
-
-            <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
-
-            <p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
-                ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
-                laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
-                parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
-                dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
-                ornare iaculis.</p>
-
+            <div class="about-slider">
+                <div>
+                    <img src="img/me-wide-1.jpg" alt="" />
+                </div>
+                <div>
+                    <img src="img/me-wide-1.jpg" alt="" />
+                </div>
+            </div>
+            <div class="about-me-text">
+                <p>
+                    Я из Одессы :)
+                    Занимаюсь веб-разработкой более 3-х лет.
+                    Был опыт работы в веб-студиях, ИТ-компаниях.
+                    Сейчас занимаюсь фрилансом, этот стиль жизни нравится больше.
+                    Работаю в коворкинге.
+                    Никогда не пропадаю, всегда на связи. Если возникают проблемы - сразу обсуждаю с клиентом.
+                </p>
+            </div>
         </div>
     </section>
-
     <!-- Contact -->
-    <section id="contact" class="four">
+    <section id="contact" class="five">
         <div class="container">
-
             <header>
-                <h2>Contact</h2>
+                <h2>Контакты</h2>
             </header>
+            <div class="contacts-wrap">
+                <p>
+                    Связаться со мной можно любым удобным способом:
+                </p>
+                <ul class="contact-links">
+                    <li><a href="skype:serega_terehov" target="_blank" class="contact-link fa-skype"><span class="label">serega_terehov</span></a></li>
+                    <li><a href="mailto:terehovsergej@gmail.com" target="_blank" class="contact-link fa-envelope"><span class="label">terehovsergej@gmail.com</span></a></li>
+                    <li><a href="tel:+380993612228" target="_blank" class="contact-link fa-phone"><span class="label">+38 (099) 361 22 28</span></a></li>
+                    <li><a href="https://vk.com/serega_terehov" target="_blank" class="contact-link fa-vk"><span class="label">vk.com/serega_terehov</span></a></li>
+                    <li><a href="https://www.facebook.com/sergey.terekhov.58" target="_blank" class="contact-link fa-facebook"><span class="label">facebook.com/sergey.terekhov.58</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/terehovsergej" target="_blank" class="contact-link fa-linkedin"><span class="label">linkedin.com/in/terehovsergej</span></a></li>
 
-            <p>Elementum sem parturient nulla quam placerat viverra
-                mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
-                donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
-                orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
-
+                </ul>
+                <p>
+                    Или отправьте мне сообщение с помощью этой формы.
+                    <br>
+                    Отвечу Вам как только увижу сообщение (обычно не более 2-3 часов)
+                </p>
+            </div>
             <form method="post" action="#">
                 <div class="row">
-                    <div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
+                    <div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Ваше имя" /></div>
                     <div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
                     <div class="12u$">
-                        <textarea name="message" placeholder="Message"></textarea>
+                        <textarea name="message" placeholder="Сообщение"></textarea>
                     </div>
                     <div class="12u$">
-                        <input type="submit" value="Send Message" />
+                        <input type="submit" value="Отправить" />
                     </div>
                 </div>
             </form>
@@ -193,20 +236,17 @@
 
 </div>
 
-<!-- Footer -->
 <div id="footer">
-
-    <!-- Copyright -->
     <ul class="copyright">
-        <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        <li>2014-2017 &copy; Терехов Сергей</li>
     </ul>
-
 </div>
 
 
 
 
 <script src="js/lib/jquery.min.js"></script>
+<script src="js/lib/slick.min.js"></script>
 <script src="js/lib/jquery.scrolly.min.js"></script>
 <script src="js/lib/jquery.scrollzer.min.js"></script>
 <script src="js/lib/skel.min.js"></script>
