@@ -45,10 +45,10 @@
 <div id="main">
     <section id="top" class="one dark cover">
         <div class="main-slider">
-            <div class="main-slide-1"></div>
-            <div class="main-slide-2"></div>
+            <!--<div class="main-slide-1"></div>-->
+            <!--<div class="main-slide-2"></div>-->
             <div class="main-slide-4"></div>
-            <div class="main-slide-3"></div>
+            <!--<div class="main-slide-3"></div>-->
         </div>
         <div class="container first-screen">
             <header>
@@ -115,54 +115,115 @@
             <header>
                 <h2>Портфолио</h2>
             </header>
-
-            <p>Некоторые из моих работ:</p>
-
-            <div class="row">
-                <div class="4u 12u$(mobile)">
-                    <article class="item">
-                        <a href="#" class="image fit"><img src="img/pic02.jpg" alt="" /></a>
-                        <header>
-                            <h3>Ipsum Feugiat</h3>
-                        </header>
-                    </article>
-                    <article class="item">
-                        <a href="#" class="image fit"><img src="img/pic03.jpg" alt="" /></a>
-                        <header>
-                            <h3>Rhoncus Semper</h3>
-                        </header>
-                    </article>
+            <div class="port-filters">
+                <div class="port-filter active" data-filter="*">
+                    Все
                 </div>
-                <div class="4u 12u$(mobile)">
-                    <article class="item">
-                        <a href="#" class="image fit"><img src="img/pic04.jpg" alt="" /></a>
-                        <header>
-                            <h3>Magna Nullam</h3>
-                        </header>
-                    </article>
-                    <article class="item">
-                        <a href="#" class="image fit"><img src="img/pic05.jpg" alt="" /></a>
-                        <header>
-                            <h3>Natoque Vitae</h3>
-                        </header>
-                    </article>
+                <div class="port-filter" data-filter=".html">
+                    Верстка
                 </div>
-                <div class="4u$ 12u$(mobile)">
-                    <article class="item">
-                        <a href="#" class="image fit"><img src="img/pic06.jpg" alt="" /></a>
-                        <header>
-                            <h3>Dolor Penatibus</h3>
-                        </header>
-                    </article>
-                    <article class="item">
-                        <a href="#" class="image fit"><img src="img/pic07.jpg" alt="" /></a>
-                        <header>
-                            <h3>Orci Convallis</h3>
-                        </header>
-                    </article>
+                <div class="port-filter" data-filter=".wordpress">
+                    Wordpress
+                </div>
+                <div class="port-filter" data-filter=".responsive">
+                    Адаптивная верстка
                 </div>
             </div>
+            <div class="port">
+                <div class="port-item html" data-project="avi">
+                    <img src="img/portfolio/avi.jpg" alt="" data-transition="11" class="port-item__preview">
+                    <div class="port-hover">
+                        <div class="port-hover__text">
+                            <span class="title">Awi Invest</span>
+                            <span class="descrip">Верстка корпоративного сайта</span>
+                            <span class="button">Подробнее</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="port-item html" data-project="mg">
+                    <img src="img/portfolio/mg.jpg" alt="" data-transition="10" class="port-item__preview">
+                    <div class="port-hover">
+                        <div class="port-hover__text">
+                            <span class="title">MG Group</span>
+                            <span class="descrip">Верстка сайта строительной компании</span>
+                            <span class="button">Подробнее</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="port-item html" data-project="karavella">
+                    <img src="img/portfolio/karavella.jpg" alt="" data-transition="6" class="port-item__preview">
+                    <div class="port-hover">
+                        <div class="port-hover__text">
+                            <span class="title">Каравелла Поргугалии</span>
+                            <span class="descrip">Верстка сайта жилого комплекса</span>
+                            <span class="button">Подробнее</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="port-item html responsive" data-project="slowemotion">
+                    <img src="img/portfolio/slowemotion.jpg" alt="" data-transition="6" class="port-item__preview">
+                    <div class="port-hover">
+                        <div class="port-hover__text">
+                            <span class="title">Slowemotion</span>
+                            <span class="descrip">Верстка лендинга</span>
+                            <span class="button">Подробнее</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="port-item html responsive" data-project="nistratov">
+                    <img src="img/portfolio/nistratov.jpg" alt="" data-transition="3" class="port-item__preview">
+                    <div class="port-hover">
+                        <div class="port-hover__text">
+                            <span class="title">«Академик Нистратов»</span>
+                            <span class="descrip">Верстка сайта архитектурно-конструкторского бюро</span>
+                            <span class="button">Подробнее</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="port-item html" data-project="arbok">
+                    <img src="img/portfolio/arbok.jpg" alt="" data-transition="7" class="port-item__preview">
+                    <div class="port-hover">
+                        <div class="port-hover__text">
+                            <span class="title">Arbok Water</span>
+                            <span class="descrip">Верстка одной страницы сайта</span>
+                            <span class="button">Подробнее</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="port-item html wordpress responsive" data-project="bianki">
+                    <img src="img/portfolio/bianki.jpg" alt="" data-transition="3" class="port-item__preview">
+                    <div class="port-hover">
+                        <div class="port-hover__text">
+                            <span class="title">Бианки и партнеры</span>
+                            <span class="descrip">Верстка сайта + Wordpress</span>
+                            <span class="button">Подробнее</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="port-item html responsive" data-project="zheleznaya-sova">
+                    <img src="img/portfolio/zheleznaya-sova.jpg" alt="" data-transition="3" class="port-item__preview">
+                    <div class="port-hover">
+                        <div class="port-hover__text">
+                            <span class="title">Железная Сова</span>
+                            <span class="descrip">Верстка сайта компании по производству оборудования</span>
+                            <span class="button">Подробнее</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="port-item html" data-project="vektor">
+                    <img src="img/portfolio/vektor.jpg" alt="" data-transition="0" class="port-item__preview">
+                    <div class="port-hover">
+                        <div class="port-hover__text">
+                            <span class="title">Vektor-engineering</span>
+                            <span class="descrip">Верстка сайта строительной компании</span>
+                            <span class="button">Подробнее</span>
+                        </div>
+                    </div>
+                </div>
 
+
+
+            </div>
         </div>
     </section>
 
@@ -174,9 +235,6 @@
                 <h2>Обо мне</h2>
             </header>
             <div class="about-slider">
-                <div>
-                    <img src="img/me-wide-1.jpg" alt="" />
-                </div>
                 <div>
                     <img src="img/me-wide-1.jpg" alt="" />
                 </div>
@@ -243,10 +301,120 @@
 </div>
 
 
+<div class="portfolio-popup" id="popup-avi">
+    <div class="popup-bg"></div>
+    <div class="popup-close"><i></i><i></i></div>
+    <div class="browser">
+        <img src="img/browser-header.png" alt="browser" class="browser-header">
+        <a href="http://xn----ctbjkcaab2bq2aei1du.xn--p1ai/" target="_blank" class="browser-url">инвестиции-сочи.рф</a>
+        <div class="browser-content">
+            <img src="img/portfolio/avi.jpg" alt="">
+        </div>
+    </div>
+    <a href="http://xn----ctbjkcaab2bq2aei1du.xn--p1ai/" target="_blank" class="project-url">инвестиции-сочи.рф</a>
+</div>
+<div class="portfolio-popup" id="popup-karavella">
+    <div class="popup-bg"></div>
+    <div class="popup-close"><i></i><i></i></div>
+    <div class="browser">
+        <img src="img/browser-header.png" alt="browser" class="browser-header">
+        <a href="http://karavella-sochi.ru/" target="_blank" class="browser-url">karavella-sochi.ru/</a>
+        <div class="browser-content">
+            <img src="img/portfolio/karavella.jpg" alt="">
+        </div>
+    </div>
+    <a href="http://karavella-sochi.ru/" target="_blank" class="project-url">karavella-sochi.ru</a>
+</div>
+<div class="portfolio-popup" id="popup-mg">
+    <div class="popup-bg"></div>
+    <div class="popup-close"><i></i><i></i></div>
+    <div class="browser">
+        <img src="img/browser-header.png" alt="browser" class="browser-header">
+        <a href="http://krd-mggroup.ru/" target="_blank" class="browser-url">krd-mggroup.ru</a>
+        <div class="browser-content">
+            <img src="img/portfolio/mg.jpg" alt="">
+        </div>
+    </div>
+    <a href="http://krd-mggroup.ru/" target="_blank" class="project-url">krd-mggroup.ru</a>
+</div>
+<div class="portfolio-popup" id="popup-slowemotion">
+    <div class="popup-bg"></div>
+    <div class="popup-close"><i></i><i></i></div>
+    <div class="browser">
+        <img src="img/browser-header.png" alt="browser" class="browser-header">
+        <a href="http://slowemotion.com.ua/" target="_blank" class="browser-url">slowemotion.com.ua</a>
+        <div class="browser-content">
+            <img src="img/portfolio/slowemotion.jpg" alt="">
+        </div>
+    </div>
+    <a href="http://slowemotion.com.ua/" target="_blank" class="project-url">slowemotion.com.ua</a>
+</div>
+<div class="portfolio-popup" id="popup-nistratov">
+    <div class="popup-bg"></div>
+    <div class="popup-close"><i></i><i></i></div>
+    <div class="browser">
+        <img src="img/browser-header.png" alt="browser" class="browser-header">
+        <a href="http://akb-nistratov.ru/" target="_blank" class="browser-url">akb-nistratov.ru</a>
+        <div class="browser-content">
+            <img src="img/portfolio/nistratov.jpg" alt="">
+        </div>
+    </div>
+    <a href="http://akb-nistratov.ru/" target="_blank" class="project-url">akb-nistratov.ru</a>
+</div>
+<div class="portfolio-popup" id="popup-arbok">
+    <div class="popup-bg"></div>
+    <div class="popup-close"><i></i><i></i></div>
+    <div class="browser">
+        <img src="img/browser-header.png" alt="browser" class="browser-header">
+        <a href="http://psd2html.hol.es/ArbokWater/" target="_blank" class="browser-url">psd2html.hol.es/ArbokWater</a>
+        <div class="browser-content">
+            <img src="img/portfolio/arbok.jpg" alt="">
+        </div>
+    </div>
+    <a href="http://psd2html.hol.es/ArbokWater/" target="_blank" class="project-url">psd2html.hol.es/ArbokWater</a>
+</div>
+<div class="portfolio-popup" id="popup-bianki">
+    <div class="popup-bg"></div>
+    <div class="popup-close"><i></i><i></i></div>
+    <div class="browser">
+        <img src="img/browser-header.png" alt="browser" class="browser-header">
+        <a href="http://bianki.ru/" target="_blank" class="browser-url">bianki.ru</a>
+        <div class="browser-content">
+            <img src="img/portfolio/bianki.jpg" alt="">
+        </div>
+    </div>
+    <a href="http://bianki.ru/" target="_blank" class="project-url">bianki.ru</a>
+</div>
+<div class="portfolio-popup" id="popup-vektor">
+    <div class="popup-bg"></div>
+    <div class="popup-close"><i></i><i></i></div>
+    <div class="browser">
+        <img src="img/browser-header.png" alt="browser" class="browser-header">
+        <a href="http://www.vektorvl.ru/" target="_blank" class="browser-url">vektorvl.ru</a>
+        <div class="browser-content">
+            <img src="img/portfolio/vektor.jpg" alt="">
+        </div>
+    </div>
+    <a href="http://www.vektorvl.ru/" target="_blank" class="project-url">vektorvl.ru</a>
+</div>
+<div class="portfolio-popup" id="popup-zheleznaya-sova">
+    <div class="popup-bg"></div>
+    <div class="popup-close"><i></i><i></i></div>
+    <div class="browser">
+        <img src="img/browser-header.png" alt="browser" class="browser-header">
+        <a href="http://xn--80aafkaej4aul6a9m.xn--p1ai/" target="_blank" class="browser-url">железная-сова.рф</a>
+        <div class="browser-content">
+            <img src="img/portfolio/zheleznaya-sova.jpg" alt="">
+        </div>
+    </div>
+    <a href="http://xn--80aafkaej4aul6a9m.xn--p1ai/" target="_blank" class="project-url">железная-сова.рф</a>
+</div>
+
 
 
 <script src="js/lib/jquery.min.js"></script>
 <script src="js/lib/slick.min.js"></script>
+<script src="js/lib/isotope.pkgd.min.js"></script>
 <script src="js/lib/jquery.scrolly.min.js"></script>
 <script src="js/lib/jquery.scrollzer.min.js"></script>
 <script src="js/lib/skel.min.js"></script>

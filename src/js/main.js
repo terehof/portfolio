@@ -48,6 +48,32 @@
 			speed: 1000
 		});
 
+		var $portfolio = $('.port').isotope({
+			percentPosition: true,
+			itemSelector: '.port-item',
+			layoutMode: 'fitRows'
+		});
+		var $filters = $('.port-filter');
+		$filters.on('click', function () {
+			var $this = $(this),
+				filterValue = $this.data('filter');
+			$filters.removeClass('active');
+			$this.addClass('active');
+			$portfolio.isotope({ filter: filterValue });
+		});
+
+
+		$('.port-item').on('click', function (e) {
+			e.preventDefault();
+			var $this = $(this),
+				project = $this.data('project');
+			$('#popup-' + project).fadeIn(500);
+		});
+		$('.popup-close, .popup-bg').on('click', function () {
+			$('.portfolio-popup').fadeOut(300);
+		});
+
+
 		// CSS polyfills (IE<9).
 			if (skel.vars.IEVersion < 9)
 				$(':last-child').addClass('last-child');
